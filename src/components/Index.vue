@@ -22,7 +22,7 @@ export default {
      smoothies: [
        { title: 'Morning Brew', slug: 'morning-brew', ingredients: ['Chocolate', 'Coffee', 'Milk'] },
        {
-         title: 'Mango Delight', slug: 'mago-delight', ingredients: ['Mango', 'Milk', 'Icecream']
+         title: 'Mango Delight', slug: 'mango-delight', ingredients: ['Mango', 'Milk', 'Icecream']
        }
      ]
     }
@@ -31,6 +31,22 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
+<style>
+  .index{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin-top: 60px;
+  }
+  .index h2{
+    font-size: 1.8em;
+    text-align: center;
+    margin-top: 0;
+  }
+  .index .ingredients{
+    margin: 30px auto;
+  }
+  .index .ingredients li{
+    display: inline-block;
+  }
 </style>
