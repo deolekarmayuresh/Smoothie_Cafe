@@ -3,7 +3,7 @@
         <nav class="nav-extended blue">
             <div class="nav-content">
                 <router-link to="">
-                    <span class="nav-title">MD's Smoothies</span>
+                    <span class="nav-title">MD's Smoothie Cafe</span>
                 </router-link>
                 <a href="" class="btn-floating btn-large halfway-fab red">
                     <router-link to="">
