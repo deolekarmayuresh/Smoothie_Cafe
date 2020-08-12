@@ -58,7 +58,7 @@ export default {
     display: inline-block;
   }
   .index .delete{
-    color: grey;
+    color: #607d8b;
     position: absolute;
     top: 4px;
     right: 4px;
