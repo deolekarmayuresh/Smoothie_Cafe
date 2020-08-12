@@ -21,18 +21,18 @@ export default {
   data () {
     return {
      smoothies: [
-       { title: 'Morning Brew', slug: 'morning-brew', ingredients: ['Chocolate', 'Coffee', 'Milk'] },
+       { title: 'Morning Brew', slug: 'morning-brew', ingredients: ['Chocolate', 'Coffee', 'Milk'], id: '1' },
        {
-         title: 'Mango Delight', slug: 'mango-delight', ingredients: ['Mango', 'Milk', 'Icecream']
+         title: 'Mango Delight', slug: 'mango-delight', ingredients: ['Mango', 'Milk', 'Icecream'], id: '2'
        }
      ]
     }
   },
   methods: {
-    deleteSmoothie(id) {
+    deleteSmoothie(id){
       this.smoothies = this.smoothies.filter(smoothie => {
         return smoothie.id != id
-      })
+      });
     }
   }
 }
