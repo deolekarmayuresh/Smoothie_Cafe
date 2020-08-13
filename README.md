@@ -1,6 +1,10 @@
-# md-smoothies
+# MD's Smoothie Café 🥤
 
-> A Vuejs Project
+> A Vuejs Project built with material design and firebase deployment to discover new smoothie recipes
+
+## Click below to visit MD's Smoothie Cafe:
+[MD's Smoothie Café](https://mdsmoothiecafe.firebaseapp.com/#/)
+
 
 ## Build Setup
 
