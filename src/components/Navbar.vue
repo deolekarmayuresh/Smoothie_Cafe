@@ -1,7 +1,7 @@
 <template>
     <div class="navbar">
         <nav class="nav-extended blue">
-            <div class="nav-content">
+            <div class="nav-content center-align">
                 <router-link :to="{ name: 'Index' }">
                     <span class="nav-title yellow-text">MD's Smoothie Cafe</span>
                 </router-link>
