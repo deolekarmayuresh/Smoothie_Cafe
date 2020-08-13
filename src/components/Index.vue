@@ -10,7 +10,7 @@
           </li>
         </ul>
       </div>
-      <span class="btn-floating btn-large halfway-fab orange">
+      <span class="btn-floating btn-large halfway-fab amber">
         <router-link :to="{ name: 'EditSmoothie', params: {smoothie_slug: smoothie.slug} }">
           <i class="material-icons edit">edit</i>
         </router-link>
