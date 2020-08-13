@@ -1,6 +1,6 @@
 <template>
     <div v-if="smoothie" class="edit-smoothie container">
-        <h2>Edit {{ smoothie.title }} Smoothie</h2>
+        <h2 class="center-align teal-text text-accent-3">Edit {{ smoothie.title }} Smoothie</h2>
         <form @submit.prevent="EditSmoothie">
            <div class="field title">
                <label for="title">Smoothie Title: </label>
@@ -17,7 +17,7 @@
            </div>
            <div class="field center-align">
                <p v-if="feedback" class="red-text">{{ feedback }}</p>
-               <button class="btn pink">Edit Smoothie</button>
+               <button class="btn pink accent-2">Edit Smoothie</button>
            </div>
        </form>
     </div>
@@ -30,7 +30,9 @@ export default {
     name: 'EditSmoothie',
     data() {
         return {
-            smoothie: null
+            smoothie: null,
+            another: null,
+            feedback: null
         }
     },
     created() {
@@ -46,5 +48,26 @@ export default {
 </script>
 
 <style>
-    
+.edit-smoothie{
+    margin-top: 60px;
+    padding: 20px;
+    max-width: 500px;
+}
+.edit-smoothie h2{
+    font-size: 2em;
+    margin: 20px auto;
+}
+.edit-smoothie .field{
+    margin: 20px auto;
+    position: relative
+}
+
+.edit-smoothie .delete{
+    position: absolute;
+    right: 0;
+    bottom: 16px;
+    color: grey;
+    font-size: 1.4em;
+    cursor: pointer;
+}
 </style>
