@@ -24,6 +24,7 @@
 
 <script>
 import db from '@/firebase/init'
+import slugify from 'slugify'
 
 export default {
     data() {
@@ -40,9 +41,20 @@ export default {
             // console.log(this.title, this.ingredients)
             if (this.title) {
                 this.feedback = null
+                //create a slug
+                this.slug = slugify(this.title, {
+                    replacement: '-',
+                    remove: /[$*_+~.()'"!\-:@]/g,
+                    lower: true
+                })
                 db.collection('smoothies').add({
                     title: this.title,
-                    ingredients: this.ingredients
+                    ingredients: this.ingredients,
+                    slug: this.slug
+                }).then(() => {
+                    this.$router.push({ name: 'Index'})
+                }).catch(err => {
+                    console.log(err)
                 })
             }else{
                 this.feedback = 'You must enter a smoothie title'
