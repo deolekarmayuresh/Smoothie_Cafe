@@ -20,12 +20,7 @@ export default {
   name: 'Index',
   data () {
     return {
-     smoothies: [
-       { title: 'Morning Brew', slug: 'morning-brew', ingredients: ['Chocolate', 'Coffee', 'Milk'], id: '1' },
-       {
-         title: 'Mango Delight', slug: 'mango-delight', ingredients: ['Mango', 'Milk', 'Icecream'], id: '2'
-       }
-     ]
+     smoothies: []
     }
   },
   methods: {
