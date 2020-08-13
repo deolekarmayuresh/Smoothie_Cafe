@@ -3,7 +3,7 @@
         <nav class="nav-extended blue">
             <div class="nav-content center-align">
                 <router-link :to="{ name: 'Index' }">
-                    <span class="nav-title yellow-text">MD's Smoothie Cafe</span>
+                    <span class="nav-title yellow-text">MD's Smoothie Café</span>
                 </router-link>
                 <a href="" class="btn-floating btn-large halfway-fab red">
                     <router-link :to="{ name: 'AddSmoothie' }">
