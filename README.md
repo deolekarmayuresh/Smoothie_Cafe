@@ -1,4 +1,4 @@
-# MD's Smoothie Café 🥤
+# MD's Smoothie Café 🍹
 
 > A Vuejs Project built with material design and firebase deployment to discover new smoothie recipes
 
